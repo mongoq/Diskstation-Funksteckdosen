@@ -1,5 +1,9 @@
 // Install https://github.com/sui77/rc-switch before compiling
 
+// To test send string 01010001001 with 9600 baud to Arduino Nano
+// That is 01010 as Hauscode and 00100 as Funksteckdose (C) and "on" as 1
+// Don't forget to change transmit pin (11) to the one used in your wiring setup
+
 // Define RCSwitch Object -----------
 
 #include <RCSwitch.h>
@@ -14,7 +18,7 @@ boolean newData = false;
 // General Setup --------------------
 
 void setup() {
-  // Transmitter is connected to Arduino Pin #11
+  // Transmitter is connected to Arduino pin #11
   mySwitch.enableTransmit(11);
   // Optional set pulse length.
   // mySwitch.setPulseLength(320);
