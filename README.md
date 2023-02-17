@@ -1,7 +1,8 @@
 # Diskstation-Funksteckdosen
 Control Pollin Funksteckdosen with an Arduino Nano and a Synology Diskstation
 
-To use this with Synology Diskstations install the file **ch341.ko** from **(https://github.com/robertklep/dsm7-usb-serial-drivers)**.
+To use this with Synology Diskstations install the file **ch341.ko** from:
+**https://github.com/robertklep/dsm7-usb-serial-drivers**.
 
 You need to do an "**insmod usbserial.ko**" before you can do an "**insmod ch341.ko**" (otherwise you will get an error "**unknown symbol**").
 
